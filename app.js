@@ -189,7 +189,7 @@ var UIController = (function () {
 
             newhtml = html.replace('%id%',obj.id);
             newhtml = newhtml.replace('%description%',obj.description);
-            newhtml = newhtml.replace('%value%',this.formatNumber(obj.value,type));
+            newhtml = newhtml.replace('%value%',formatNumber(obj.value,type));
 
             document.querySelector(element).insertAdjacentHTML('beforeend',newhtml);
 
